@@ -1,0 +1,26 @@
+{
+    "sourceFile": "main.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1775762353546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1775762405728,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n-import 'style.styl'\r\n+import './style.styl'\r\n console.log('Hello world!')\r\n"
+                },
+                {
+                    "date": 1775762414403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,2 @@\n+import './style.styl'\r\n+console.log('Hello world!')\r\n"
+                }
+            ],
+            "date": 1775762353546,
+            "name": "Commit-0",
+            "content": "import 'style.styl'\r\nconsole.log('Hello world!')\r\n"
+        }
+    ]
+}
