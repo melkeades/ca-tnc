@@ -1,0 +1,107 @@
+.splide__slide.is-active
+    border 3px solid transparent !important
+
+[slider-cut] .w-dyn-item, [static-cut] .splide__list
+    display flex !important
+    flex-basis unset !important
+    justify-content start
+    grid-row-gap unset
+    grid-column-gap unset
+
+    [class$='__c'], [class*='__c ']
+        width 100%
+
+.splide__list.w-dyn-items
+    justify-content start
+    grid-row-gap unset
+    grid-column-gap unset
+
+.testimonials-25__item__c
+    direction ltr
+
+.testimonials-25__item.is-active
+    border 0px solid transparent !important
+
+.vision__slider, .open-house__slider, .real__slider, .structure__slider, .testimonials-25__slider
+    .splide__track
+        overflow visible !important
+
+[tabs-attached] .w-tab-menu
+    display none
+
+[arrows-attached]
+    .w-slider-arrow-left, .w-slider-arrow-right
+        display none
+
+html.lenis
+    height auto
+
+.lenis.lenis-smooth
+    scroll-behavior auto
+
+.lenis.lenis-smooth [data-lenis-prevent]
+    overscroll-behavior contain
+
+.lenis.lenis-stopped
+    overflow hidden
+
+.lenis.lenis-scrolling iframe
+    pointer-events none
+
+.st-overflow
+    overflow hidden
+
+.form__rows:has(input.is--invalid)
+    [sf-goto = 'next']
+        opacity .5
+
+//NEEDS TO BE FIXED WITH A JS OBSERVER
+.form__rows[sytle*='display: flex']
+    //step1, Would you like to enable third parties to interact with us on your behalf?
+    &:not(:has([name='Radio9']:checked)), &:has(#Checkbox1_2:checked):has([name='Checkbox2']:not(:checked))
+        [sf-goto = 'next']
+            opacity .4 !important
+            pointer-events none !important
+
+.vds-buffering-spinner
+    display none !important
+
+//.custom_player
+//display block
+//min-height 0
+media-player
+    --video-border-radius 0px !important
+
+.custom_player.is--9x16
+    //opacity .5
+    //max-height 90vh
+    width 100%
+    //max-width 570px/*optional*/
+    aspect-ratio 9 / 16
+
+    //display block
+    //z-index 1000
+    media-player
+        height 100% !important
+        aspect-ratio 9 / 16 !important
+
+.navbar__c
+    z-index 20 !important
+
+.w-nav-overlay
+    //pointer-events none !important
+    top 0
+    z-index 10 !important
+
+.w-nav [data-nav-menu-open]
+    display flex !important
+
+//fw changed .gsap_split_line-mask to gsap_split_line ~12/29 '25
+.gsap_split_line
+    overflow visible !important
+    clip-path inset(-.125em 0 -.225em 0)
+
+//move the gear icon to the left out of X
+@media (max-width 768px)
+    .vds-controls :nth-child(1 of .vds-controls-group) .vds-controls-spacer
+        display none !important

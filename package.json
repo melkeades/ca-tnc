@@ -1,0 +1,26 @@
+{
+  "name": "ca-tnc",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.89.2",
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
+    "@splidejs/splide-extension-intersection": "^0.2.0",
+    "@studio-freight/lenis": "^1.0.42",
+    "gsap": "^3.12.5",
+    "stylus": "^0.63.0",
+    "vidstack": "^1.12.13",
+    "vite-plugin-mkcert": "^1.17.9"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}
