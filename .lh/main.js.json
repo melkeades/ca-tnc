@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1775762353546,
@@ -16,6 +16,14 @@
                 {
                     "date": 1775762414403,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,2 @@\n+import './style.styl'\r\n+console.log('Hello world!')\r\n"
+                },
+                {
+                    "date": 1775764661454,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,7 @@\n import './style.styl'\r\n-console.log('Hello world!f')\r\n+// console.log('Hello world!f')\r\n+\r\n+function successSlider() {\r\n+  console.log('successSlider')\r\n+}\r\n+successSlider()\r\n"
+                },
+                {
+                    "date": 1775769611036,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n // console.log('Hello world!f')\r\n \r\n function successSlider() {\r\n   console.log('successSlider')\r\n-  addSplideClasses(testimonials$, '.testimonial-slider__tracker')\r\n+  addSplideClasses(testimonials$, '.story__slider')\r\n \r\n   const slider = new Splide(testimonials$, {\r\n     arrows: false,\r\n     pagination: false,\r\n"
                 }
             ],
             "date": 1775762353546,
