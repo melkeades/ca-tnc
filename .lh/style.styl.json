@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1775770418222,
@@ -16,6 +16,10 @@
                 {
                     "date": 1775774776626,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \r\n     [class$='__c'], [class*='__c ']\r\n         width 100%\r\n \r\n-.splide__list.w-dyn-items\r\n+.splide__list[slider-cut].w-dyn-items\r\n     justify-content start\r\n     grid-row-gap unset\r\n     grid-column-gap unset\r\n \r\n"
+                },
+                {
+                    "date": 1775780215268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n     grid-column-gap unset\r\n \r\n     [class$='__c'], [class*='__c ']\r\n         width 100%\r\n+        border 0\r\n \r\n .splide__list[slider-cut].w-dyn-items\r\n     justify-content start\r\n     grid-row-gap unset\r\n"
                 }
             ],
             "date": 1775770418222,
