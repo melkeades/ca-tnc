@@ -6,11 +6,11 @@
       "169.254.74.58",
       "169.254.98.18",
       "127.0.0.1",
-      "172.31.240.1"
+      "172.22.112.1"
     ],
     "hash": {
-      "key": "32fb3f49b11aa147a84b8ed177945bd41a9b329f31e0ea4bd8c0e09ea2fe4313",
-      "cert": "4c29ed0e31d9fb5f9698c1ae10b6be731c8d78584938af234df69a413f7997af"
+      "key": "cc181224804d52d916a79ecb8040d8b54656ce062c0e544dd4a827b8bbcae9cb",
+      "cert": "ab955e3fc650fdec10eef15929c2d627952e3ed425806d458989fc6c98906b13"
     }
   },
   "configFilePath": "C:\\Users\\Serj\\GitHub\\ca-tnc\\certs\\config.json"

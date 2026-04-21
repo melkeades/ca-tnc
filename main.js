@@ -6,6 +6,7 @@ function successSlider() {
   console.log('successSlider')
 
   const testimonials$ = sel('.story__slider')
+  if (!testimonials$) return
   addSplideClasses(testimonials$)
 
   const slider = new Splide(testimonials$, {
