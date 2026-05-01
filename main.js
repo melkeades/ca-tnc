@@ -83,5 +83,5 @@ function successSlider() {
     // drag: false,
   }).mount()
   connectSplideArrows(slider, '.pfh__tools--wrapper.is--success', '.button.is--nav')
+  // successSlider()
 }
-// successSlider()
