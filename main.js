@@ -1,7 +1,7 @@
 import './style.styl'
 import { addSplideClasses, connectSplideArrows, dev, sel } from './utils'
-import Splide from '@splidejs/splide'
-import { AutoScroll } from '@splidejs/splide-extension-auto-scroll'
+// import Splide from '@splidejs/splide'
+// import { AutoScroll } from '@splidejs/splide-extension-auto-scroll'
 // console.log('Hello world!f')
 
 function headerSlider() {
@@ -16,20 +16,8 @@ function headerSlider() {
     type: 'loop',
     pagination: false,
     arrows: false,
-    // padding: { left: 0, right: 0 },
-    // focus: 'center',
-    // trimSpace: true,
-    // start: middleIndex,
     perPage: 1,
     autoWidth: true,
-
-    // AutoScroll extension configuration for continuous movement
-    // autoScroll: {
-    //   speed: 1, // Speed of continuous scrolling (pixels per frame)
-    //   pauseOnHover: true, // Pause when user hovers
-    //   pauseOnFocus: true, // Pause when focused
-    // },
-    // autoplay: dev ? false : true,
   }).mount({ AutoScroll })
   leftArrow.forEach((arrow) => {
     arrow.addEventListener('click', () => {
@@ -41,9 +29,8 @@ function headerSlider() {
       splide.go('<')
     })
   })
-  console.log('headerSlider')
 }
-headerSlider()
+// headerSlider()
 
 function successSlider() {
   console.log('successSlider')
