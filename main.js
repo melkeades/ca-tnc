@@ -1,6 +1,49 @@
 import './style.styl'
 import { addSplideClasses, connectSplideArrows, dev, sel } from './utils'
+import Splide from '@splidejs/splide'
+import { AutoScroll } from '@splidejs/splide-extension-auto-scroll'
 // console.log('Hello world!f')
+
+function headerSlider() {
+  const slider = document.querySelector('#property-marquee')
+  const sliderParent = slider?.parentElement
+  const leftArrow = sliderParent?.querySelectorAll('.splide__prev')
+  const rightArrow = sliderParent?.querySelectorAll('.splide__next')
+  console.log('sliderParent', sliderParent, leftArrow, rightArrow)
+  if (!slider) return
+  slider.classList.add('splide')
+  const splide = new Splide(slider, {
+    type: 'loop',
+    pagination: false,
+    arrows: false,
+    // padding: { left: 0, right: 0 },
+    // focus: 'center',
+    // trimSpace: true,
+    // start: middleIndex,
+    perPage: 1,
+    autoWidth: true,
+
+    // AutoScroll extension configuration for continuous movement
+    // autoScroll: {
+    //   speed: 1, // Speed of continuous scrolling (pixels per frame)
+    //   pauseOnHover: true, // Pause when user hovers
+    //   pauseOnFocus: true, // Pause when focused
+    // },
+    // autoplay: dev ? false : true,
+  }).mount({ AutoScroll })
+  leftArrow.forEach((arrow) => {
+    arrow.addEventListener('click', () => {
+      splide.go('>')
+    })
+  })
+  rightArrow?.forEach((arrow) => {
+    arrow.addEventListener('click', () => {
+      splide.go('<')
+    })
+  })
+  console.log('headerSlider')
+}
+headerSlider()
 
 function successSlider() {
   console.log('successSlider')
@@ -41,4 +84,4 @@ function successSlider() {
   }).mount()
   connectSplideArrows(slider, '.pfh__tools--wrapper.is--success', '.button.is--nav')
 }
-successSlider()
+// successSlider()
